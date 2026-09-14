@@ -6,7 +6,7 @@ export default function Page() {
   return (
     <>
       <main className="wrap">
-        <section className="section pt-[clamp(4.5rem,16vw,8rem)]" aria-labelledby="name">
+        <section className="section section-hero" aria-labelledby="name">
           <Reveal>
             <h1 id="name" className="h-hero">
               {hero.name}
@@ -21,7 +21,7 @@ export default function Page() {
           </Reveal>
 
           <Reveal className="mt-[clamp(2.75rem,9vw,4rem)]">
-            <Photo id={hero.photo} className="max-w-[22rem]" />
+            <Photo id={hero.photo} className="hero-portrait" />
           </Reveal>
         </section>
 
