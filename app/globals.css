@@ -17,8 +17,9 @@
 
 @layer base {
   :root {
-    /* The text column itself, not the box around it. */
-    --measure: 39.5rem;
+    /* The text column itself, not the box around it: 632px on a tablet,
+       opening to 680px on a laptop where the page is otherwise all margin. */
+    --measure: clamp(39.5rem, 34rem + 10vw, 42.5rem);
     --gutter: clamp(1.125rem, 5vw, 2.25rem);
   }
 
